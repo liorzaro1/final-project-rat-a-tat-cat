@@ -1,0 +1,32 @@
+[
+    {
+        "cardName":"Draw-2",
+        "cardUrls": [
+            {
+                "cardImgPrimaryUrl":"https://i.pinimg.com/originals/dd/7b/5f/dd7b5fbff733e28d58c30fa184a03f3a.png",
+                "cardImgSecondaryUrl": "https://mocah.org/uploads/posts/580678-Light-Glitter.jpg"
+            }
+        ],
+        "isSpecial": true
+    },
+    {
+        "cardName":"Swap",
+        "cardUrls": [
+            {
+                "cardImgPrimaryUrl":"https://thumbs.dreamstime.com/b/cat-poker-player-sketch-vector-illustration-cartoon-engraving-t-shirt-apparel-print-design-scratch-board-imitation-black-white-171457626.jpg",
+                "cardImgSecondaryUrl": "https://mocah.org/uploads/posts/580678-Light-Glitter.jpg"
+            }
+        ],
+        "isSpecial": true
+    },
+    {
+        "cardName":"Peek",
+        "cardUrls": [
+            {
+                "cardImgPrimaryUrl":"https://i.pinimg.com/originals/98/2a/30/982a30c20ee30b63f89612665fdfca07.jpg",
+                "cardImgSecondaryUrl": "https://mocah.org/uploads/posts/580678-Light-Glitter.jpg"
+            }
+        ],
+        "isSpecial": true
+    }
+]

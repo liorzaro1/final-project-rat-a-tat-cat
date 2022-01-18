@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Menu</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <form id="gameForm">
+                <label for="playersNum">Choose Players' Number:</label>
+                <input type="number" min="2" max="6" placeholder="0" required="" class="form-control" id="playersNum" name="playersNum">
+                <br/>
+                <label for="maxScoreNum">Choose Maximum Score Number:</label>
+                <input type="number" min="100" max="200" step="10" placeholder="0" required="" class="form-control" id="maxScoreNum" name="maxScoreNum">
+                <br/>
+                <label for="roundsNum">Choose Rounds Number:</label>
+                <input type="number" min="1" max="10" placeholder="0" required="" class="form-control" id="roundsNum" name="roundsNum">
+                <br/>
+            </form>
+            <div class="button">
+                <a href="game.html" class="btn btn-success">Accept</a>
+                <a href="home.html" class="btn btn-danger">Cancel</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+#deck {
+    height: 300px;
+    width: 300px;
+}
+#pile {
+    height: 300px;
+    width: 300px;
+}
+.player1Card {
+    height: 150px;
+    width: 150px;
+}
+.player2Card {
+    height: 150px;
+    width: 150px;
+}
+.player3Card {
+    height: 150px;
+    width: 150px;
+}
+.player4Card {
+    height: 150px;
+    width: 150px;
+}
+.player5Card {
+    height: 150px;
+    width: 150px;
+}
+.player6Card {
+    height: 150px;
+    width: 150px;
+}
+#player1Zone{
+    background-color: green;
+}
+#player2Zone{
+    background-color: red;
+}
+#player3Zone{
+    background-color: pink;
+}
+#player4Zone{
+    background-color: yellow;
+}
+#player5Zone{
+    background-color: orange;
+}
+#player6Zone{
+    background-color: purple;
+}
+#gameZone {
+    background-color: burlywood;
+}

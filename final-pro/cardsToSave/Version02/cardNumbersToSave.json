@@ -1,0 +1,102 @@
+[
+    {
+        "cardName":"Number Zero",
+        "cardUrls": [
+            {
+                "cardImgPrimaryUrl":"https://ae01.alicdn.com/kf/HTB1O755oxGYBuNjy0Fnq6x5lpXaS/1Pc-Heat-Transfer-Stickers-Cartoon-Cat-Patches-Iron-On-Appliques-DIY-Printing-Decor.jpg",
+                "cardImgSecondaryUrl": "https://mocah.org/uploads/posts/580678-Light-Glitter.jpg"
+            }
+        ],
+        "isSpecial": false
+    },
+    {
+        "cardName":"Number One",
+        "cardUrls": [
+            {
+                "cardImgPrimaryUrl":"https://jloog.com/images/drawn-feline-small-cat-1.jpg",
+                "cardImgSecondaryUrl": "https://mocah.org/uploads/posts/580678-Light-Glitter.jpg"
+            }
+        ],
+        "isSpecial": false
+    },
+    {
+        "cardName":"Number Two",
+        "cardUrls": [
+            {
+                "cardImgPrimaryUrl":"https://i.pinimg.com/originals/98/bc/a8/98bca8eb0a3469d7f3d4da96a74edad4.jpg",
+                "cardImgSecondaryUrl": "https://mocah.org/uploads/posts/580678-Light-Glitter.jpg"
+            }
+        ],
+        "isSpecial": false
+    },
+    {
+        "cardName":"Number Three",
+        "cardUrls": [
+            {
+                "cardImgPrimaryUrl":"https://static.vecteezy.com/system/resources/previews/002/160/257/original/a-baby-cat-wearing-earphone-hand-drawing-vector.jpg",
+                "cardImgSecondaryUrl": "https://mocah.org/uploads/posts/580678-Light-Glitter.jpg"
+            }
+        ],
+        "isSpecial": false
+    },
+    {
+        "cardName":"Number Four",
+        "cardUrls": [
+            {
+                "cardImgPrimaryUrl":"https://i.imgur.com/i3X5g.jpg",
+                "cardImgSecondaryUrl": "https://mocah.org/uploads/posts/580678-Light-Glitter.jpg"
+            }
+        ],
+        "isSpecial": false
+    },
+    {
+        "cardName":"Number Five",
+        "cardUrls": [
+            {
+                "cardImgPrimaryUrl":"https://i.pinimg.com/originals/5a/64/cc/5a64cce79829f60ded1f2802d19056c8.jpg",
+                "cardImgSecondaryUrl": "https://mocah.org/uploads/posts/580678-Light-Glitter.jpg"
+            }
+        ],
+        "isSpecial": false
+    },
+    {
+        "cardName":"Number Six",
+        "cardUrls": [
+            {
+                "cardImgPrimaryUrl":"https://thumbs.dreamstime.com/b/cat-rat-vector-illustration-cartoon-playing-55057296.jpg",
+                "cardImgSecondaryUrl": "https://mocah.org/uploads/posts/580678-Light-Glitter.jpg"
+            }
+        ],
+        "isSpecial": false
+    },
+    {
+        "cardName":"Number Seven",
+        "cardUrls": [
+            {
+                "cardImgPrimaryUrl":"https://thumbs.dreamstime.com/b/d-rendering-cartoon-mouse-tourist-holding-travel-suitcase-cute-smiling-wearing-sunglasses-hat-looking-like-seems-ready-138420027.jpg",
+                "cardImgSecondaryUrl": "https://mocah.org/uploads/posts/580678-Light-Glitter.jpg"
+            }
+        ],
+        "isSpecial": false
+    },
+    {
+        "cardName":"Number Eight",
+        "cardUrls": [
+            {
+                "cardImgPrimaryUrl":"https://thumbs.dreamstime.com/b/fun-rat-cartoon-character-guitar-d-rendered-illustration-69162615.jpg",
+                "cardImgSecondaryUrl": "https://mocah.org/uploads/posts/580678-Light-Glitter.jpg"
+            }
+        ],
+        "isSpecial": false
+    },
+    {
+        "cardName":"Number Nine",
+        "cardUrls": [
+            {
+                "cardImgPrimaryUrl":"https://thumbs.dreamstime.com/b/king-rat-wear-s-clothes-crown-107388001.jpg",
+                "cardImgSecondaryUrl": "https://mocah.org/uploads/posts/580678-Light-Glitter.jpg"
+            }
+        ],
+        "isSpecial": false
+    }      
+]

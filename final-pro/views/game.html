@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/game.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="./game.js"></script>
+</head>
+<body>
+    <br/>
+    <br/>
+    <div class="container">
+        <!-- <div class="button">
+            <button class="btn btn-success" onclick="initializeGame()">Start The Game</button>
+        </div>
+        <br/> -->
+        <div class="title">
+            <h1>Players' Number: <span> </span></h1>
+            <h1>Maximum Score: <span> </span></h1>
+            <h1>Maximum Rounds: <span> </span></h1>
+        </div>
+        <div>
+            <div class="button" id="player1Zone">
+                <button class="btn btn-lg player1Card player1EndCard" id="Player1LeftCard" onclick="gameFlow('Player1LeftCard', 'Player1LeftCardTxt')">
+                    <h2 class="player1EndCardTxt player1CardTxt" id="Player1LeftCardTxt">Player 1</h2>
+                </button>
+                <button class="btn btn-lg player1Card" id="Player1LeftMiddleCard" onclick="gameFlow('Player1LeftMiddleCard', 'Player1LeftMiddleCardTxt')">
+                    <h2 id="Player1LeftMiddleCardTxt" class="player1CardTxt">Player 1</h2>
+                </button>
+                <button class="btn btn-lg player1Card" id="Player1RightMiddleCard" onclick="gameFlow('Player1RightMiddleCard', 'Player1RightMiddleCardTxt')">
+                    <h2 id="Player1RightMiddleCardTxt" class="player1CardTxt">Player 1</h2>
+                </button>
+                <button class="btn btn-lg player1Card player1EndCard" id="Player1RightCard" onclick="gameFlow('Player1RightCard', 'Player1RightCardTxt')">
+                    <h2 class="player1EndCardTxt player1CardTxt" id="Player1RightCardTxt">Player 1</h2>
+                </button>
+                <div id="player1Score"><h2 id="player1ScoreTxt"></h2></div>
+            </div>
+            <div class="button" id="player2Zone">
+                <button class="btn btn-lg player2Card player2EndCard" id="Player2LeftCard" onclick="gameFlow('Player2LeftCard', 'Player2LeftCardTxt')">
+                    <h2 class="player2EndCardTxt player2CardTxt" id="Player2LeftCardTxt">Player 2</h2>
+                </button>
+                <button class="btn btn-lg player2Card" id="Player2LeftMiddleCard" onclick="gameFlow('Player2LeftMiddleCard', 'Player2LeftMiddleCardTxt')">
+                    <h2 id="Player2LeftMiddleCardTxt" class="player2CardTxt">Player 2</h2>
+                </button>
+                <button class="btn btn-lg player2Card" id="Player2RightMiddleCard" onclick="gameFlow('Player2RightMiddleCard', 'Player2RightMiddleCardTxt')">
+                    <h2 id="Player2RightMiddleCardTxt" class="player2CardTxt">Player 2</h2>
+                </button>
+                <button class="btn btn-lg player2Card player2EndCard" id="Player2RightCard" onclick="gameFlow('Player2RightCard', 'Player2RightCardTxt')">
+                    <h2 class="player2EndCardTxt player2CardTxt" id="Player2RightCardTxt">Player 2</h2>
+                </button>
+                <div id="player2Score"><h2 id="player2ScoreTxt"></h2></div>
+            </div>
+            <div class="button" id="gameZone">
+                <button class="btn btn btn-lg" id="deck" onclick="gameFlow('deck', 'deckTxt')">
+                    <h2 id="deckTxt">Deck</h2>
+                </button>
+                <button class="btn btn btn-lg" id="pile" onclick="gameFlow('pile', 'pileTxt')">
+                    <h2 id="pileTxt">Pile</h2>
+                </button>
+                <div id="gameGuide">
+                    <h2 id="gameGuideTxt"></h2>
+                </div>
+            </div>
+            <div class="button">
+                <button class="btn btn-success" id="ratATatCat" onclick="ratATatCat()">Rat A Tat Cat</button>
+                <!-- <button class="btn btn-warning" onclick="specialCard()">Draw-2 / Swap / Peek</button> -->
+            </div>
+            <div class="button" id="player3Zone">
+                <button class="btn btn-lg player3Card player3EndCard" id="Player3LeftCard" onclick="gameFlow('Player3LeftCard', 'Player3LeftCardTxt')">
+                    <h2 class="player3EndCardTxt player3CardTxt" id="Player3LeftCardTxt">Player 3</h2>
+                </button>
+                <button class="btn btn-lg player3Card" id="Player3LeftMiddleCard" onclick="gameFlow('Player3LeftMiddleCard', 'Player3LeftMiddleCardTxt')">
+                    <h2 id="Player3LeftMiddleCardTxt" class="player3CardTxt">Player 3</h2>
+                </button>
+                <button class="btn btn-lg player3Card" id="Player3RightMiddleCard" onclick="gameFlow('Player3RightMiddleCard', 'Player3RightMiddleCardTxt')">
+                    <h2 id="Player3RightMiddleCardTxt" class="player3CardTxt">Player 3</h2>
+                </button>
+                <button class="btn btn-lg player3Card player3EndCard" id="Player3RightCard" onclick="gameFlow('Player3RightCard', 'Player3RightCardTxt')">
+                    <h2 class="player3EndCardTxt player3CardTxt" id="Player3RightCardTxt">Player 3</h2>
+                </button>
+                <div id="player3Score"><h2 id="player3ScoreTxt"></h2></div>
+            </div>
+            <div class="button" id="player4Zone">
+                <button class="btn btn-lg player4Card player4EndCard" id="Player4LeftCard" onclick="gameFlow('Player4LeftCard', 'Player4LeftCardTxt')">
+                    <h2 class="player4EndCardTxt player4CardTxt" id="Player4LeftCardTxt">Player 4</h2>
+                </button>
+                <button class="btn btn-lg player4Card" id="Player4LeftMiddleCard" onclick="gameFlow('Player4LeftMiddleCard', 'Player4LeftMiddleCardTxt')">
+                    <h2 id="Player4LeftMiddleCardTxt" class="player4CardTxt">Player 4</h2>
+                </button>
+                <button class="btn btn-lg player4Card" id="Player4RightMiddleCard" onclick="gameFlow('Player4RightMiddleCard', 'Player4RightMiddleCardTxt')">
+                    <h2 id="Player4RightMiddleCardTxt" class="player4CardTxt">Player 4</h2>
+                </button>
+                <button class="btn btn-lg player4Card player4EndCard" id="Player4RightCard" onclick="gameFlow('Player4RightCard', 'Player4RightCardTxt')">
+                    <h2 class="player4EndCardTxt player4CardTxt" id="Player4RightCardTxt">Player 4</h2>
+                </button>
+                <div id="player4Score"><h2 id="player4ScoreTxt"></h2></div>
+            </div>
+            <div class="button" id="player5Zone">
+                <button class="btn btn-lg player5Card player5EndCard" id="Player5LeftCard" onclick="gameFlow('Player5LeftCard', 'Player5LeftCardTxt')">
+                    <h2 class="player5EndCardTxt player5CardTxt" id="Player5LeftCardTxt">Player 5</h2>
+                </button>
+                <button class="btn btn-lg player5Card" id="Player5LeftMiddleCard" onclick="gameFlow('Player5LeftMiddleCard', 'Player5LeftMiddleCardTxt')">
+                    <h2 id="Player5LeftMiddleCardTxt" class="player5CardTxt">Player 5</h2>
+                </button>
+                <button class="btn btn-lg player5Card" id="Player5RightMiddleCard" onclick="gameFlow('Player5RightMiddleCard', 'Player5RightMiddleCardTxt')">
+                    <h2 id="Player5RightMiddleCardTxt" class="player5CardTxt">Player 5</h2>
+                </button>
+                <button class="btn btn-lg player5Card player5EndCard" id="Player5RightCard" onclick="gameFlow('Player5RightCard', 'Player5RightCardTxt')">
+                    <h2 class="player5EndCardTxt player5CardTxt" id="Player5RightCardTxt">Player 5</h2>
+                </button>
+                <div id="player5Score"><h2 id="player5ScoreTxt"></h2></div>
+            </div>
+            <div class="button" id="player6Zone">
+                <button class="btn btn-lg player6Card player6EndCard" id="Player6LeftCard" onclick="gameFlow('Player6LeftCard', 'Player6LeftCardTxt')">
+                    <h2 class="player6EndCardTxt player6CardTxt" id="Player6LeftCardTxt">Player 6</h2>
+                </button>
+                <button class="btn btn-lg player6Card" id="Player6LeftMiddleCard" onclick="gameFlow('Player6LeftMiddleCard', 'Player6LeftMiddleCardTxt')">
+                    <h2 id="Player6LeftMiddleCardTxt" class="player6CardTxt">Player 6</h2>
+                </button>
+                <button class="btn btn-lg player6Card" id="Player6RightMiddleCard" onclick="gameFlow('Player6RightMiddleCard', 'Player6RightMiddleCardTxt')">
+                    <h2 id="Player6RightMiddleCardTxt" class="player6CardTxt">Player 6</h2>
+                </button>
+                <button class="btn btn-lg player6Card player6EndCard" id="Player6RightCard" onclick="gameFlow('Player6RightCard', 'Player6RightCardTxt')">
+                    <h2 class="player6EndCardTxt player6CardTxt" id="Player6RightCardTxt">Player 6</h2>
+                </button>
+                <div id="player6Score"><h2 id="player6ScoreTxt"></h2></div>
+            </div>
+        </div>
+        <div>
+            <table class="table table-hover text-center">
+                <tr>
+                    <th>Round / Player</th>
+                    <th>Player 1</th>
+                    <th>Player 2</th>
+                    <th>Player 3</th>
+                    <th>Player 4</th>
+                    <th>Player 5</th>
+                    <th>Player 6</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Player 1 Score</td>
+                    <td>Player 2 Score</td>
+                    <td>Player 3 Score</td>
+                    <td>Player 4 Score</td>
+                    <td>Player 5 Score</td>
+                    <td>Player 6 Score</td>
+                </tr>
+            </table>
+            <table class="table table-hover text-center">
+                <tr>
+                    <th>Total</th>
+                    <th>Player 1 Total Score</th>
+                    <th>Player 2 Total Score</th>
+                    <th>Player 3 Total Score</th>
+                    <th>Player 4 Total Score</th>
+                    <th>Player 5 Total Score</th>
+                    <th>Player 6 Total Score</th>
+                </tr>
+            </table>
+            <div>
+               <!-- <p>Player 6 is The Winner!</p> -->
+                <div class="button">
+                    <a class="btn btn-success" href="game.html">Play Again</a>
+                    <a class="btn btn-danger" href="game menu.html">Back To Game Menu</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

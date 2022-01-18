@@ -1,0 +1,114 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: century gothic;
+    box-sizing: content-box;
+}
+
+header
+{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(bg-img.jpg);
+    height: 200vh;
+    background-size: cover;
+    background-position: center;
+}
+
+ul
+{
+    float: left;
+    list-style: none;
+    margin-top: 25px;
+}
+
+ul li
+{
+    display: inline-block;
+}
+
+ul li a
+{
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: sans-serif;
+    font-size: 15px;
+    border: 1px solid white;
+    transition: 0.6s ease;
+}
+
+ul li a:hover
+{
+    background-color: white;
+    color: #000;
+}
+
+ul li.activ a{
+    background-color: white;
+    color: #000;
+}
+
+body
+{
+    font-family: monospace;
+}
+
+.main
+{
+    max-width: 1200px;
+    margin: auto;
+    float: left;
+}
+
+.hero
+{
+    position: absolute;
+    top: 53%;
+    left: 45%;
+    transform: translate(-50%,-50%);
+}
+
+.hero h1
+{
+    color: white;
+    font-size: 45px;
+}
+
+.hero p
+{
+    color: white;
+    font-size: 16px;
+}
+p2{
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+.button
+{
+    position: absolute;
+    top: 105%;
+    left: 45%;
+    transform: translate(-50%,-50%);
+}
+
+.btn
+{
+    border: 1px solid white;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    margin-right: 5px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.btn-one
+{
+    background-color: rgb(14, 185, 14);
+    font-family: "Roboto", sans-serif;
+}
+
+
